@@ -490,7 +490,7 @@ section.home {
 
 .featured .gallery .box:first-child a {
     position: absolute;
-    bottom: 2rem;
+    bottom: 1rem;
     padding: .4rem 1rem;
     color: var(--white-color);
     background: var(--green-color);
