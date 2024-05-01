@@ -74,8 +74,8 @@ function galleryAnimation(triggerSelector, boxSelectors) {
     const timeline = gsap.timeline({
         scrollTrigger: {
             trigger: triggerSelector,
-            start: "top 210%",
-            end: "bottom 210%",
+            start: "top 260%",
+            end: "bottom 260%",
             scrub: 1,
         },
     });
