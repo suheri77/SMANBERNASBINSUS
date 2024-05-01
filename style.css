@@ -490,7 +490,7 @@ section.home {
 
 .featured .gallery .box:first-child a {
     position: absolute;
-    bottom: 5rem;
+    bottom: 2rem;
     padding: .4rem 1rem;
     color: var(--white-color);
     background: var(--green-color);
@@ -900,7 +900,7 @@ footer .footer .copyright a {
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1000px) {
 
     .heading {
         font-size: 2rem;
