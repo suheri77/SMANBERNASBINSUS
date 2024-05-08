@@ -132,7 +132,7 @@ section.home {
 .home .home-box {
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.1)), url("home-background.jpg");
+    background: linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.1)), url("Black\ Wallpaper\ 2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -345,7 +345,7 @@ section.home {
 /* destination section starts here  */
 
 /* Penyesuaian untuk layar smartphone */
-@media (max-width: 500px) {
+@media (max-width: 1000px) {
     .destinations .container .container-box {
         flex-direction: column;
         align-items: flex-start;
@@ -1003,6 +1003,52 @@ footer .footer .copyright a {
         font-size: 1.1rem;
     }
 }
+
+
+/* CSS for photo frame */
+.team-member {
+    text-align: center;
+}
+
+.team-member img {
+    width: 200px; /* Sesuaikan lebar gambar */
+    height: auto; /* Biarkan tinggi gambar disesuaikan secara otomatis */
+    border: 2px solid #d10c0c; /* Tambahkan bingkai dengan ketebalan dan warna tertentu */
+    border-radius: 10px; /* Membuat sudut gambar menjadi melengkung */
+    margin-bottom: 10px; /* Jarak antara gambar dan detail anggota tim */
+}
+
+.team-member .details {
+    font-size: 16px;
+}
+
+
+.team {
+    text-align: center;
+}
+
+.team .container {
+    display: inline-block;
+    text-align: left; /* Untuk mengembalikan konten ke posisi awal */
+}
+
+
+.team-member img {
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover img {
+    transform: translateX(-20px); /* Pergi ke kiri */
+}
+
+.team-member:hover img {
+    transform: translateX(20px); /* Pergi ke kanan */
+}
+
+
+
+/* CSS lainnya ... */
+
 /* media section starts here  */
 
 
