@@ -173,7 +173,8 @@ section.home {
 
 .home .home-box nav .logo h3 {
     color: var(--white-color);
-    font-weight: 400;
+    font-weight: 300;
+    font-size: 15px; /* Ubah ukuran huruf sesuai kebutuhan */
 }
 
 .home .home-box nav .menu .close {
