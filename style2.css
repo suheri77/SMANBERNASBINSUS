@@ -104,7 +104,8 @@ nav {
 }
 
 /* CSS Animation */
-@keyframes moveText {
+/* Menggunakan animasi untuk membuat teks bergerak */
+@keyframes moveTextUpDown {
     0% { transform: translateY(0); }
     50% { transform: translateY(-20px); }
     100% { transform: translateY(0); }
@@ -113,11 +114,12 @@ nav {
 .team .heading {
     font-size: 32px;
     color: #eb0e0e;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     text-transform: uppercase;
     font-weight: bold;
-    animation: moveText 2s infinite; /* Menggunakan animasi CSS */
+    animation: moveTextUpDown 2s infinite alternate; /* Teks akan bergerak ke atas dan bawah selama 2 detik */
 }
+
 
 .clock-container {
     display: flex; /* Use flexbox */
@@ -161,5 +163,22 @@ nav {
     .new-session .heading {
         animation: moveHeader 2s infinite; /* Ubah angka 2s menjadi durasi yang diinginkan */
     }
+
+
+
+    @keyframes moveText {
+        0% { transform: translateX(0); }
+        50% { transform: translateX(20px); }
+        100% { transform: translateX(0); }
+    }
+    
+    .featured .label {
+        animation: moveText 2s infinite; /* Menggerakkan teks label secara horizontal */
+    }
+    
+    .featured .heading {
+        animation: moveText 2s infinite alternate; /* Menggerakkan teks heading secara horizontal dengan perubahan arah */
+    }
+    
 
 
