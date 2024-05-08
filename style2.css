@@ -1,0 +1,165 @@
+.menu ul li a {
+    color: blue; /* Warna teks */
+}
+
+.home-box h3 {
+    color: rgb(228, 18, 25); /* Ubah warna teks */
+}
+
+/* Style for navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+.logo h3 {
+    color: #fff;
+    margin: 0;
+    font-size: 24px;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    display: inline;
+}
+
+.menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 8px;
+    transition: background-color 0.3s ease;
+    border-radius: 20px; /* Menjadikan bentuk tabung */
+}
+
+.menu ul li a:hover {
+    background-color: #ed152e;
+}
+
+/* Style for bars and close icons */
+.bar,
+.close {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .bars {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+        width: 100%;
+    }
+
+    .menu.active {
+        display: block;
+    }
+
+    .menu ul {
+        display: block;
+        text-align: center;
+    }
+
+    .menu ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .bar,
+    .close {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+
+.team .container {
+    text-align: center;
+    padding: 20px;
+}
+
+.team .label {
+    font-size: 18px;
+    color: #555;
+}
+
+
+
+.team .sub-heading {
+    font-size: 24px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+/* CSS Animation */
+@keyframes moveText {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
+
+.team .heading {
+    font-size: 32px;
+    color: #eb0e0e;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    animation: moveText 2s infinite; /* Menggunakan animasi CSS */
+}
+
+.clock-container {
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 10vh; /* Set height of container to full viewport height */
+}
+
+.digital-clock {
+    font-size: 50px;
+    font-family: Arial, sans-serif;
+    transition: color 0.5s ease; /* Add transition for smooth color change */
+}
+
+
+/*table*/
+.student-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.student-table th, .student-table td {
+    border: 1px solid #5fbcd6;
+    padding: 8px;
+    text-align: left;
+}
+
+.student-table th {
+    background-color: #be7f7f;
+}
+
+
+
+
+    @keyframes moveHeader {
+        0% { transform: translateY(0); }
+        50% { transform: translateY(-10px); }
+        100% { transform: translateY(0); }
+    }
+
+    .new-session .heading {
+        animation: moveHeader 2s infinite; /* Ubah angka 2s menjadi durasi yang diinginkan */
+    }
+
+
