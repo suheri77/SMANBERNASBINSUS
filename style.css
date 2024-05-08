@@ -177,6 +177,7 @@ section.home {
     font-size: 15px; /* Ubah ukuran huruf sesuai kebutuhan */
 }
 
+
 .home .home-box nav .menu .close {
     display: none;
 }
@@ -658,6 +659,40 @@ section.home {
     transform: translate(0, 100px);
     opacity: 0;
 }
+
+/* Menambahkan animasi untuk gambar bergerak */
+@keyframes moveImageLeftRight {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(-20px); }
+    100% { transform: translateX(0); }
+}
+
+.feedback .voices .voice .profile img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 2rem;
+    animation: moveImageLeftRight 2s infinite alternate; /* Gambar akan bergerak ke kiri dan kanan selama 2 detik */
+}
+
+
+@keyframes moveText {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(20px); }
+    100% { transform: translateX(0); }
+}
+
+.feedback .label {
+    animation: moveText 2s infinite; /* Menggerakkan teks label secara horizontal */
+}
+
+.feedback .paragraph {
+    animation: moveText 2s infinite alternate; /* Menggerakkan teks heading secara horizontal dengan perubahan arah */
+}
+
+
+
 /* feedback section ends here  */
 
 /* article section starts here  */
