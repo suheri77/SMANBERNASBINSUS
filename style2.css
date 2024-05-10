@@ -122,16 +122,19 @@ nav {
 
 
 .clock-container {
-    display: flex; /* Use flexbox */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    height: 10vh; /* Set height of container to full viewport height */
+    display: flex; /* Gunakan flexbox */
+    justify-content: center; /* Pusatkan secara horizontal */
+    align-items: center; /* Pusatkan secara vertikal */
+    height: 10vh; /* Setel tinggi kontainer ke tinggi viewport penuh */
 }
 
 .digital-clock {
-    font-size: 50px;
-    font-family: Arial, sans-serif;
-    transition: color 0.5s ease; /* Add transition for smooth color change */
+    font-size: 30px;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif; /* Menggunakan font yang lebih futuristik */
+    transition: color 0.5s ease; /* Tambahkan transisi untuk perubahan warna yang halus */
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.8); /* Tambahkan efek bayangan */
+    transform: scale(1.2); /* Skala ukuran jam */
 }
 
 
@@ -142,7 +145,7 @@ nav {
 }
 
 .student-table th, .student-table td {
-    border: 1px solid #5fbcd6;
+    border: 1px solid #a90b0b;
     padding: 8px;
     text-align: left;
 }
@@ -151,6 +154,36 @@ nav {
     background-color: #be7f7f;
 }
 
+.image-cylinder {
+    border-radius: 20%;
+}
+
+
+
+
+.student-table td {
+    height: 120px; /* Ubah tinggi baris sesuai kebutuhan */
+}
+
+.student-table th:nth-child(1),
+.student-table td:nth-child(1) {
+    width: 3%; /* Ubah lebar kolom No. */
+}
+
+.student-table th:nth-child(2),
+.student-table td:nth-child(2) {
+    width: 10%; /* Ubah lebar kolom Foto */
+}
+
+.student-table th:nth-child(3),
+.student-table td:nth-child(3) {
+    width: 20%; /* Ubah lebar kolom nama */
+}
+
+.student-table th:nth-child(4),
+.student-table td:nth-child(4) {
+    width: 7%; /* Ubah lebar kolom kelas */
+}
 
 
 
@@ -179,6 +212,16 @@ nav {
     .featured .heading {
         animation: moveText 2s infinite alternate; /* Menggerakkan teks heading secara horizontal dengan perubahan arah */
     }
+
+    
+    .article .label {
+        animation: moveText 2s infinite; /* Menggerakkan teks label secara horizontal */
+    }
+    .article .heading {
+        animation: moveText 2s infinite alternate;
+    }
+
+
     
 
 
