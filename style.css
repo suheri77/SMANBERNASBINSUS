@@ -660,6 +660,8 @@ section.home {
     opacity: 0;
 }
 
+
+
 /* Menambahkan animasi untuk gambar bergerak */
 @keyframes moveImageLeftRight {
     0% { transform: translateX(0); }
@@ -675,6 +677,10 @@ section.home {
     border-radius: 2rem;
     animation: moveImageLeftRight 2s infinite alternate; /* Gambar akan bergerak ke kiri dan kanan selama 2 detik */
 }
+
+
+
+
 
 
 @keyframes moveText {
