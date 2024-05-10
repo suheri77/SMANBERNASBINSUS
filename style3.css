@@ -1,0 +1,26 @@
+#show-more-btn,
+    #show-less-btn {
+        display: block;
+        margin: 10px auto;
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+
+    .menu ul li:nth-child(1) a {
+        animation: moveUpDown 2s infinite alternate;
+    }
+    
+    @keyframes moveUpDown {
+        0% {
+            transform: translateY(0);
+        }
+        100% {
+            transform: translateY(-10px);
+        }
+    }
+    
